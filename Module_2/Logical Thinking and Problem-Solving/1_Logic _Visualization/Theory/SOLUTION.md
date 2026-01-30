@@ -15,6 +15,7 @@ Create a program that checks if a number is even or odd.
 - End the process
 
 ### Step 3: Flowchart
+
 ```
 Start → Input Number → Number % 2 == 0?
   ├─ Yes → Print "Even number" → End
@@ -22,6 +23,7 @@ Start → Input Number → Number % 2 == 0?
 ```
 
 ### Step 4: Pseudocode
+
 ```
 START Even_Odd_Check
   INPUT number
@@ -34,6 +36,7 @@ END Even_Odd_Check
 ```
 
 ### Step 5: C# Implementation Example
+
 ```csharp
 using System;
 
@@ -43,7 +46,7 @@ class EvenOddChecker
     {
         Console.WriteLine("Enter a number:");
         int number = int.Parse(Console.ReadLine());
-        
+
         if (number % 2 == 0)
         {
             Console.WriteLine("Even number");
@@ -56,6 +59,8 @@ class EvenOddChecker
 }
 ```
 
+**Code File:** See [EvenOddChecker.cs](EvenOddChecker.cs)
+
 ---
 
 ## Additional Examples
@@ -63,6 +68,7 @@ class EvenOddChecker
 ### Example: Login System Solution
 
 **Pseudocode:**
+
 ```
 START Login_System
   INPUT username, password
@@ -77,6 +83,7 @@ END Login_System
 ```
 
 **C# Example:**
+
 ```csharp
 using System;
 
@@ -86,12 +93,12 @@ class LoginSystem
     {
         string validUsername = "admin";
         string validPassword = "password123";
-        
+
         Console.WriteLine("Enter username:");
         string username = Console.ReadLine();
         Console.WriteLine("Enter password:");
         string password = Console.ReadLine();
-        
+
         if (username == validUsername && password == validPassword)
         {
             Console.WriteLine("Access granted");
@@ -104,9 +111,14 @@ class LoginSystem
 }
 ```
 
+**Code File:** See [LoginSystem.cs](LoginSystem.cs)
+
+---
+
 ### Example: E-commerce Checkout Solution
 
 **Pseudocode:**
+
 ```
 START Checkout_Process
   WHILE user wants to select products LOOP
@@ -122,6 +134,7 @@ END Checkout_Process
 ```
 
 **C# Example:**
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -132,23 +145,23 @@ class CheckoutProcess
     {
         List<string> cart = new List<string>();
         string continueShop = "yes";
-        
+
         while (continueShop.ToLower() == "yes")
         {
             Console.WriteLine("Enter product name:");
             string product = Console.ReadLine();
             cart.Add(product);
-            
+
             Console.WriteLine("Select another product? (yes/no):");
             continueShop = Console.ReadLine();
         }
-        
+
         Console.WriteLine("Enter shipping details:");
         string shippingDetails = Console.ReadLine();
-        
+
         Console.WriteLine("Select payment method (credit card/PayPal):");
         string paymentMethod = Console.ReadLine();
-        
+
         Console.WriteLine("Order confirmed!");
         Console.WriteLine($"Items: {string.Join(", ", cart)}");
         Console.WriteLine($"Shipping: {shippingDetails}");
@@ -156,3 +169,5 @@ class CheckoutProcess
     }
 }
 ```
+
+**Code File:** See [CheckoutProcess.cs](CheckoutProcess.cs)
