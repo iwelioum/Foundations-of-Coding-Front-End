@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(find . -type d -name \"Riada\" -exec sh -c 'echo \"\"=== {} ===\"\"; ls -1 \"\"{}\"\"' ;)",
+      "Bash(gh repo view:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo rename Microsoft-Full-Stack --repo iwelioum/Foundations-of-Coding-Front-End --yes)"
+    ]
+  }
+}
